@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelCraft — Дизайн-студия</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header + Hero -->
+  <header class="header">
+    <div class="logo">PixelCraft</div>
+    <nav class="nav">
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="burger" id="burger">&#9776;</div>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>PixelCraft — создаём дизайн, который работает</h1>
+    <p>UI/UX, брендинг, веб-дизайн — всё в одном месте</p>
+    <a href="#contact" class="btn">Связаться</a>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="section">
+    <h2>О нас</h2>
+    <p>Мы — команда дизайнеров, вдохновленных минимализмом и функциональностью.</p>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="section">
+    <h2>Услуги</h2>
+    <ul class="service-list">
+      <li><i class="fa-solid fa-brush"></i> Брендинг</li>
+      <li><i class="fa-solid fa-mobile-screen-button"></i> UI/UX дизайн</li>
+      <li><i class="fa-solid fa-globe"></i> Дизайн сайтов</li>
+    </ul>
+  </section>
+
+  <!-- Галерея / Портфолио -->
+  <section id="portfolio" class="section">
+    <h2>Портфолио</h2>
+    <div class="gallery">
+      <img src="Снимок экрана 2025-05-02 004009.png" alt="Пример дизайна">
+      <img src="Снимок экрана 2025-05-02 002952.png" alt="Работа 2">
+      <img src="Снимок экрана 2025-05-02 004056.png" alt="Работа 3">
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="section">
+    <h2>Связаться с нами</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <p>&copy; 2025 PixelCraft. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>

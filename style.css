@@ -1,0 +1,164 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5b78f6;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background: #4052d7;
+  }
+  
+  /* Header + Hero */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  .burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #c6dfff, #e9f1ff);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  /* Услуги */
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-list li {
+    font-size: 18px;
+  }
+  
+  /* Галерея */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Контакты */
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background: #5b78f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #4052d7;
+  }
+  
+  /* Футер */
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 10px;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .nav a {
+      margin: 10px 0;
+    }
+  }
+  
